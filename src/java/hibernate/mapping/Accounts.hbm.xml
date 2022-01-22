@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Accounts" table="accounts" catalog="wooker" optimistic-lock="version">
+        <id name="userId" type="java.lang.Long">
+            <column name="user_id" />
+            <generator class="identity" />
+        </id>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" unique="true" />
+        </property>
+        <property name="creationTimestamp" type="long">
+            <column name="creation_timestamp" not-null="true" />
+        </property>
+        <property name="verifiedAccount" type="boolean">
+            <column name="verified_account" not-null="true" />
+        </property>
+        <property name="twoStep" type="boolean">
+            <column name="two_step" not-null="true" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="2" not-null="true" />
+        </property>
+        <property name="emailidPhone" type="string">
+            <column name="emailid_phone" length="50" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="228" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

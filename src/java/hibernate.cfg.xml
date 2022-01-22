@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mysql</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+    <mapping resource="hibernate/mapping/Accounts.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Accountpics.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Chatnotifications.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Invalidlogin.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Primaryinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Secondaryinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhideeditinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Comments.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Validlogin.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Otpcode.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhideeditaccpic.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhidechatpage.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Tokens.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Likesdislikes.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Usermessages.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhidemoreinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Talkings.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Messages.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Starredmessages.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhideaddmoreinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Captchacode.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Searches.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhideuplaccpic.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Userchatlist.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Devicedetails.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Chatuseroptions.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Showhideinfo.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Blocklist.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Disabledata.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Online.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Posts.hbm.xml"/>
+    <mapping resource="hibernate/mapping/Wooks.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

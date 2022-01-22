@@ -1,0 +1,125 @@
+.asf_fgf {
+    display:block;
+    height:50px;
+    width:50px;
+    margin:0 auto;
+    padding: 3px;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.hfghf_ghgff {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.dsf_ds {
+    margin: 0;
+    padding: 20px 20px 10px 40px;
+    display: block;
+}
+
+.dsfds_sf {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.gfhgf_fgffg {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    word-break: break-all;
+    color: rgba(0,0,0,0.7);
+}
+
+.bvbn__jh {
+    width: 100%;
+    display: block;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.fdgfd_wer {
+    display: block;
+    font-size: 12px;
+    word-spacing: 0.1em;
+    margin-top: 20px;
+    color: rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.ghfh_ghf {
+    display: inline-block;
+    width: 100%;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+
+.ghfh_ghf .fdgfd_fd{
+    float: left;
+    left: 0;
+}
+
+.ghfh_ghf .hg__hghj{
+    float: right;
+    right: 0;
+}
+
+.form_update_button {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    min-width: 46px;
+    text-align: center;
+    width: 25%;
+    height: 35px;
+    line-height: 27px;
+    outline: 0;
+    border: 0;
+    background-color: #663399;
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+    ms-user-select: none;
+    moz-user-select: none;
+    webkit-user-select: none;
+    user-select: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form_update_button:hover {
+    opacity: 0.5;
+}
+
+.gfh_ghfg {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.fgf_fgdd {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.notify_position {
+    margin: 0 auto 10px;
+    text-align: center;
+    padding: 0;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}

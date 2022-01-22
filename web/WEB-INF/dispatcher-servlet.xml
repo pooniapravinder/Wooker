@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="pages.controller.*"/>
+    <mvc:resources mapping="/rele/css/**" location="/WEB-INF/front_end/css/"/>
+    <mvc:resources mapping="/rele/img/**" location="/WEB-INF/front_end/images/"/>
+    <mvc:resources mapping="/rele/js/**" location="/WEB-INF/front_end/javascript/"/>
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>classpath:/AccountVerify/verification</value>
+                <value>classpath:/ChatSettings/chatsettings</value>
+                <value>classpath:/Error/error</value>
+                <value>classpath:/Home/home</value>
+                <value>classpath:/Info/info</value>
+                <value>classpath:/MoreInfo/moreinfo</value>
+                <value>classpath:/Login/login</value>
+                <value>classpath:/Registration/registration</value>
+                <value>classpath:/ShowCaptcha/showcaptcha</value>
+                <value>classpath:/UploadPic/uploadpic</value>
+                <value>classpath:/UserPrivacy/privacy</value>
+                <value>classpath:/Wooks/wooks</value>
+            </list>
+        </property>
+        <property name="fileEncodings" value="UTF-8"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+    <mvc:interceptors>
+        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <property name="paramName" value="lang"/>
+        </bean>
+    </mvc:interceptors>
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="defaultLocale" value="en_US"/>
+        <property name="cookieName" value="locale"></property>
+        <property name="cookieMaxAge" value="604800"></property>
+    </bean>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/front_end/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>

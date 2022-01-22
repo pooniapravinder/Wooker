@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Showhidemoreinfo" table="showhidemoreinfo" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="info" type="boolean">
+            <column name="info" not-null="true" />
+        </property>
+        <property name="addmoin" type="boolean">
+            <column name="addmoin" not-null="true" />
+        </property>
+        <property name="setting" type="boolean">
+            <column name="setting" not-null="true" />
+        </property>
+        <property name="security" type="boolean">
+            <column name="security" not-null="true" />
+        </property>
+        <property name="school" type="boolean">
+            <column name="school" not-null="true" />
+        </property>
+        <property name="grcollege" type="boolean">
+            <column name="grcollege" not-null="true" />
+        </property>
+        <property name="gruniver" type="boolean">
+            <column name="gruniver" not-null="true" />
+        </property>
+        <property name="pogrcoll" type="boolean">
+            <column name="pogrcoll" not-null="true" />
+        </property>
+        <property name="pogruniv" type="boolean">
+            <column name="pogruniv" not-null="true" />
+        </property>
+        <property name="works" type="boolean">
+            <column name="works" not-null="true" />
+        </property>
+        <property name="moved" type="boolean">
+            <column name="moved" not-null="true" />
+        </property>
+        <property name="location" type="boolean">
+            <column name="location" not-null="true" />
+        </property>
+        <property name="mobile" type="boolean">
+            <column name="mobile" not-null="true" />
+        </property>
+        <property name="email" type="boolean">
+            <column name="email" not-null="true" />
+        </property>
+        <property name="website" type="boolean">
+            <column name="website" not-null="true" />
+        </property>
+        <property name="hobbies" type="boolean">
+            <column name="hobbies" not-null="true" />
+        </property>
+        <property name="relationship" type="boolean">
+            <column name="relationship" not-null="true" />
+        </property>
+        <property name="relation" type="boolean">
+            <column name="relation" not-null="true" />
+        </property>
+        <property name="languages" type="boolean">
+            <column name="languages" not-null="true" />
+        </property>
+        <property name="religion" type="boolean">
+            <column name="religion" not-null="true" />
+        </property>
+        <property name="behaviour" type="boolean">
+            <column name="behaviour" not-null="true" />
+        </property>
+        <property name="myself" type="boolean">
+            <column name="myself" not-null="true" />
+        </property>
+        <property name="newcateg" type="boolean">
+            <column name="newcateg" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

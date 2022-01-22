@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 9, 2018 6:17:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Messages" table="messages" catalog="wooker" optimistic-lock="version">
+        <id name="msgId" type="long">
+            <column name="msg_id" />
+            <generator class="foreign">
+                <param name="property">usermessages</param>
+            </generator>
+        </id>
+        <one-to-one name="usermessages" class="hibernate.mapping.Usermessages" constrained="true"></one-to-one>
+        <property name="userMessage" type="string">
+            <column name="user_message" />
+        </property>
+        <property name="mediaId" type="string">
+            <column name="media_id" length="50" />
+        </property>
+        <property name="origName" type="string">
+            <column name="orig_name" length="65535" />
+        </property>
+        <property name="mediaType" type="string">
+            <column name="media_type" length="10" />
+        </property>
+        <property name="mediaSize" type="java.lang.Long">
+            <column name="media_size" />
+        </property>
+    </class>
+</hibernate-mapping>

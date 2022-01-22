@@ -1,0 +1,54 @@
+.qwri_dsa {
+    margin: 10px 0 10px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.qwri_dsa .sdfwe {
+    width: 15%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    ms-user-select: none;
+    moz-user-select: none;
+    webkit-user-select: none;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.qwri_dsa .sdfwe:hover {
+    opacity: 0.5;
+}
+
+.qwri_dsa .hrier {
+    width: 75%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.hrier .ghj_hg {
+    margin: 0;
+    display: block;
+    line-height: 20px;
+    color: rgba(0,0,0,0.8);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hrier .ghj_hg a{
+    padding: 2px;
+}
+
+.qwri_dsa .sdfs {
+    float: right;
+    width: 8%;
+    font-size: 11px;
+}

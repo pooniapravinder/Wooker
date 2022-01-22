@@ -1,0 +1,212 @@
+.fade_it {
+    color: rgba(0,0,0,0.4);
+    display: inline-block;
+}
+
+.p__gyi {
+    margin: -10px 0 20px 5px;
+}
+
+.gr_space {
+    margin-top: 8px;
+}
+
+.center_element {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wooks_icon {
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    ms-user-select: none;
+    moz-user-select: none;
+    webkit-user-select: none;
+    user-select: none;
+}
+
+.pre_wooks_container {
+    margin: 20px auto;
+    clear: both;
+    display: block;
+    width: 60%;
+}
+
+.wook__inf_blo {
+    padding: 10px;
+    clear: both;
+}
+
+.wook__inf {
+    padding-top: 30px;
+    word-break: break-all;
+    text-align: left;
+}
+
+
+
+
+.ter__rt {
+    display: inline-block;
+    position: relative;
+    outline:none;
+    z-index: 1;
+}
+
+.ter__rt .rrytryf {
+    visibility: hidden;
+    width: 90px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 12px;
+    margin-left: -35px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.ter__rt .rrytryf::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7) transparent transparent transparent;
+}
+
+.ter__rt:hover .rrytryf {
+    visibility: visible;
+    opacity: 1;
+}
+.jwek__lki {
+    display: inline-block;
+    padding: 0.45em;
+    box-shadow: 1.5px 1.5px 0 1px #ccc inset;
+    transform: rotate(-45deg);
+    transition:box-shadow 0.5s;
+    -webkit-transition:box-shadow 0.5s;
+    -moz-transition:box-shadow 0.5s;
+    -ms-transition:box-shadow 0.5s;
+    -o-transition:box-shadow 0.5s;
+}
+
+.jwek__lki:hover {
+    box-shadow: 1.5px 1.5px 0 1px #663399 inset;
+    transition:box-shadow 0.5s;
+    -webkit-transition:box-shadow 0.5s;
+    -moz-transition:box-shadow 0.5s;
+    -ms-transition:box-shadow 0.5s;
+    -o-transition:box-shadow 0.5s;
+}
+
+
+.sft input[type=text]{
+    width: 100%;
+}
+
+
+.wook_input_box{border: 0; padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;}
+.wook_input_box ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; z-index: 1;}
+.nickname_box .wook_input_box ~ .focus-border{width: 45%;}
+.wook_input_box ~ .focus-border:before,
+.wook_input_box ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #663399; transition: 1s;}
+.wook_input_box ~ .focus-border:after{left: auto; right: 0;}
+
+.wook_input_box:focus ~ .focus-border:before,
+.wook_input_box:focus ~ .focus-border:after,
+.has-content.wook_input_box ~ .focus-border:before,
+.has-content.wook_input_box ~ .focus-border:after
+{width: 50%; transition: 1s;}
+
+.wook_input_box ~ label{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #aaa;
+    top: 3px;
+    transition: 0.5s;
+    z-index: 1;
+    display: block;
+}
+.nickname_box .wook_input_box ~ label{
+    width: 45%;
+}
+.wook_input_box:focus ~ label, .wook_input_box:valid ~ label, .has-content.wook_input_box ~ label{
+    top: -20px;
+    color: #663399;
+    transition: 0.5s;
+}
+.wook_input_box:hover ~ label{color: #663399;}
+
+
+
+.wallpaper_preview_container {
+    position: relative;
+    margin: 10px auto;
+    height: 125px;
+    width: 30%;
+    height: 30%;
+    min-width: 150px;
+    min-height: 150px;
+    background-size: 150px 150px;
+    padding: 12px;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    ms-user-select: none;
+    moz-user-select: none;
+    webkit-user-select: none;
+    user-select: none;
+    transition: opacity 1s;
+}
+
+.wallpaper_preview_container:hover,.set_wallpaper:hover {
+    opacity: 0.5;
+}
+.choose_upload_wallpaper {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    filter:alpha(opacity=0);
+}
+
+.wallpaper_default_preview {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    min-width: 130px;
+    min-height: 130px;
+    background-size: 100% 100%;
+}
+
+.centralise {
+    display: block;
+    text-align: center;
+}
+
+.vf {
+    margin-top: 10px;
+}
+
+.terms_conditions {
+    margin-bottom: 10px;
+    line-height: 17px;
+}
+
+.terms_conditions a {
+    font-weight: 600;
+}

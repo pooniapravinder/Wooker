@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="wooker"/>
+  <table-filter match-name="searches"/>
+  <table-filter match-name="captchacode"/>
+  <table-filter match-name="chatuseroptions"/>
+  <table-filter match-name="chatnotifications"/>
+  <table-filter match-name="secondaryinfo"/>
+  <table-filter match-name="talkings"/>
+  <table-filter match-name="showhidemoreinfo"/>
+  <table-filter match-name="invalidlogin"/>
+  <table-filter match-name="likesdislikes"/>
+  <table-filter match-name="userchatlist"/>
+  <table-filter match-name="showhideeditinfo"/>
+  <table-filter match-name="otpcode"/>
+  <table-filter match-name="showhideeditaccpic"/>
+  <table-filter match-name="usermessages"/>
+  <table-filter match-name="starredmessages"/>
+  <table-filter match-name="devicedetails"/>
+  <table-filter match-name="tokens"/>
+  <table-filter match-name="accounts"/>
+  <table-filter match-name="showhidechatpage"/>
+  <table-filter match-name="showhideinfo"/>
+  <table-filter match-name="accountpics"/>
+  <table-filter match-name="showhideaddmoreinfo"/>
+  <table-filter match-name="showhideuplaccpic"/>
+  <table-filter match-name="messages"/>
+  <table-filter match-name="validlogin"/>
+  <table-filter match-name="comments"/>
+  <table-filter match-name="primaryinfo"/>
+  <table-filter match-name="blocklist"/>
+  <table-filter match-name="disabledata"/>
+  <table-filter match-name="online"/>
+  <table-filter match-name="wooks"/>
+  <table-filter match-name="posts"/>
+</hibernate-reverse-engineering>

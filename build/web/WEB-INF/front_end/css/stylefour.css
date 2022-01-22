@@ -1,0 +1,56 @@
+.restore_default {
+    text-align: center;
+    display: block;
+}
+
+.a__option {
+    padding-bottom: 40px;
+    display: block;
+}
+
+.a__option__a {
+    float: left;
+    margin-right: 10px;
+}
+
+.a__option__b {
+    float: right;
+    margin-left: 10px;
+}
+
+.co_box {
+    width: 120px;
+    display: inline-block;
+    line-height: 15px;
+    height: 40px;
+}
+
+.co_a_box {
+    margin: 0 auto 10px 40px;
+}
+
+.info-setting-form {
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+}
+.co__privacy__aa {
+    width: 100%;
+    height: 40px;
+}
+
+.co_abx_box {
+    width: 100%;
+    display: block;
+}
+
+.co_adada_kk {
+    height: 40px;
+}
+
+.info-setting-form button {
+    margin: 0 auto 10px auto;
+    position: relative;
+    display: block;
+    width: 27%;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Validlogin" table="validlogin" catalog="wooker" optimistic-lock="version">
+        <id name="deviceId" type="string">
+            <column name="device_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="loginTimestamp" type="long">
+            <column name="login_timestamp" not-null="true" />
+        </property>
+        <property name="isLogout" type="boolean">
+            <column name="is_logout" not-null="true" />
+        </property>
+        <property name="logoutKey" type="string">
+            <column name="logout_key" length="450" not-null="true" />
+        </property>
+        <property name="loginPassword" type="string">
+            <column name="login_password" length="192" not-null="true" />
+        </property>
+        <property name="loginKey" type="string">
+            <column name="login_key" length="1024" not-null="true" />
+        </property>
+        <property name="loginKeySet" type="string">
+            <column name="login_key_set" length="256" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

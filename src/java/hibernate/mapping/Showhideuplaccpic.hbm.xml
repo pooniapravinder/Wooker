@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Showhideuplaccpic" table="showhideuplaccpic" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="info" type="boolean">
+            <column name="info" not-null="true" />
+        </property>
+        <property name="moreinfo" type="boolean">
+            <column name="moreinfo" not-null="true" />
+        </property>
+        <property name="setting" type="boolean">
+            <column name="setting" not-null="true" />
+        </property>
+        <property name="security" type="boolean">
+            <column name="security" not-null="true" />
+        </property>
+        <property name="picpreview" type="boolean">
+            <column name="picpreview" not-null="true" />
+        </property>
+        <property name="choosepic" type="boolean">
+            <column name="choosepic" not-null="true" />
+        </property>
+        <property name="see" type="boolean">
+            <column name="see" not-null="true" />
+        </property>
+        <property name="dodownload" type="boolean">
+            <column name="dodownload" not-null="true" />
+        </property>
+        <property name="lidislike" type="boolean">
+            <column name="lidislike" not-null="true" />
+        </property>
+        <property name="seelidislike" type="boolean">
+            <column name="seelidislike" not-null="true" />
+        </property>
+        <property name="dotalking" type="boolean">
+            <column name="dotalking" not-null="true" />
+        </property>
+        <property name="seetalking" type="boolean">
+            <column name="seetalking" not-null="true" />
+        </property>
+        <property name="docomment" type="boolean">
+            <column name="docomment" not-null="true" />
+        </property>
+        <property name="seecomment" type="boolean">
+            <column name="seecomment" not-null="true" />
+        </property>
+        <property name="doshare" type="boolean">
+            <column name="doshare" not-null="true" />
+        </property>
+        <property name="seeshare" type="boolean">
+            <column name="seeshare" not-null="true" />
+        </property>
+        <property name="prilike" type="boolean">
+            <column name="prilike" not-null="true" />
+        </property>
+        <property name="pridislike" type="boolean">
+            <column name="pridislike" not-null="true" />
+        </property>
+        <property name="pritalking" type="boolean">
+            <column name="pritalking" not-null="true" />
+        </property>
+        <property name="pricomment" type="boolean">
+            <column name="pricomment" not-null="true" />
+        </property>
+        <property name="prishare" type="boolean">
+            <column name="prishare" not-null="true" />
+        </property>
+        <property name="defsee" type="byte">
+            <column name="defsee" not-null="true" />
+        </property>
+        <property name="defdodownload" type="byte">
+            <column name="defdodownload" not-null="true" />
+        </property>
+        <property name="deflidislike" type="byte">
+            <column name="deflidislike" not-null="true" />
+        </property>
+        <property name="defseelidislike" type="byte">
+            <column name="defseelidislike" not-null="true" />
+        </property>
+        <property name="defdotalking" type="byte">
+            <column name="defdotalking" not-null="true" />
+        </property>
+        <property name="defseetalking" type="byte">
+            <column name="defseetalking" not-null="true" />
+        </property>
+        <property name="defdocomment" type="byte">
+            <column name="defdocomment" not-null="true" />
+        </property>
+        <property name="defseecomment" type="byte">
+            <column name="defseecomment" not-null="true" />
+        </property>
+        <property name="defdoshare" type="byte">
+            <column name="defdoshare" not-null="true" />
+        </property>
+        <property name="defseeshare" type="byte">
+            <column name="defseeshare" not-null="true" />
+        </property>
+        <property name="defprilike" type="boolean">
+            <column name="defprilike" not-null="true" />
+        </property>
+        <property name="defpridislike" type="boolean">
+            <column name="defpridislike" not-null="true" />
+        </property>
+        <property name="defpritalking" type="boolean">
+            <column name="defpritalking" not-null="true" />
+        </property>
+        <property name="defpricomment" type="boolean">
+            <column name="defpricomment" not-null="true" />
+        </property>
+        <property name="defprishare" type="boolean">
+            <column name="defprishare" not-null="true" />
+        </property>
+        <property name="previouspics" type="boolean">
+            <column name="previouspics" not-null="true" />
+        </property>
+        <property name="showhide" type="boolean">
+            <column name="showhide" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

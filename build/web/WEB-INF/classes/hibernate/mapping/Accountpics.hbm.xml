@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Accountpics" table="accountpics" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="picId" type="string">
+            <column name="pic_id" length="50" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="origName" type="string">
+            <column name="orig_name" length="65535" not-null="true" />
+        </property>
+        <property name="editTstamp" type="long">
+            <column name="edit_tstamp" not-null="true" />
+        </property>
+        <property name="timeStamp" type="long">
+            <column name="time_stamp" not-null="true" />
+        </property>
+        <property name="accpic" type="boolean">
+            <column name="accpic" not-null="true" />
+        </property>
+        <property name="deleted" type="boolean">
+            <column name="deleted" not-null="true" />
+        </property>
+        <property name="pictype" type="string">
+            <column name="pictype" length="10" not-null="true" />
+        </property>
+        <property name="picsize" type="long">
+            <column name="picsize" not-null="true" />
+        </property>
+        <property name="privacy" type="byte">
+            <column name="privacy" not-null="true" />
+        </property>
+        <property name="download" type="byte">
+            <column name="download" not-null="true" />
+        </property>
+        <property name="doLidislike" type="byte">
+            <column name="do_lidislike" not-null="true" />
+        </property>
+        <property name="seeLidislike" type="byte">
+            <column name="see_lidislike" not-null="true" />
+        </property>
+        <property name="doTalking" type="byte">
+            <column name="do_talking" not-null="true" />
+        </property>
+        <property name="seeTalking" type="byte">
+            <column name="see_talking" not-null="true" />
+        </property>
+        <property name="doComment" type="byte">
+            <column name="do_comment" not-null="true" />
+        </property>
+        <property name="seeComment" type="byte">
+            <column name="see_comment" not-null="true" />
+        </property>
+        <property name="doShare" type="byte">
+            <column name="do_share" not-null="true" />
+        </property>
+        <property name="seeShare" type="byte">
+            <column name="see_share" not-null="true" />
+        </property>
+        <property name="likes" type="boolean">
+            <column name="likes" not-null="true" />
+        </property>
+        <property name="dislikes" type="boolean">
+            <column name="dislikes" not-null="true" />
+        </property>
+        <property name="talkings" type="boolean">
+            <column name="talkings" not-null="true" />
+        </property>
+        <property name="comments" type="boolean">
+            <column name="comments" not-null="true" />
+        </property>
+        <property name="shares" type="boolean">
+            <column name="shares" not-null="true" />
+        </property>
+        <property name="talkingImage" type="boolean">
+            <column name="talking_image" not-null="true" />
+        </property>
+        <property name="talkingAudio" type="boolean">
+            <column name="talking_audio" not-null="true" />
+        </property>
+        <property name="talkingVideo" type="boolean">
+            <column name="talking_video" not-null="true" />
+        </property>
+        <property name="talkingFile" type="boolean">
+            <column name="talking_file" not-null="true" />
+        </property>
+        <property name="talkingSticker" type="boolean">
+            <column name="talking_sticker" not-null="true" />
+        </property>
+        <property name="commentImage" type="boolean">
+            <column name="comment_image" not-null="true" />
+        </property>
+        <property name="commentAudio" type="boolean">
+            <column name="comment_audio" not-null="true" />
+        </property>
+        <property name="commentVideo" type="boolean">
+            <column name="comment_video" not-null="true" />
+        </property>
+        <property name="commentFile" type="boolean">
+            <column name="comment_file" not-null="true" />
+        </property>
+        <property name="commentSticker" type="boolean">
+            <column name="comment_sticker" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

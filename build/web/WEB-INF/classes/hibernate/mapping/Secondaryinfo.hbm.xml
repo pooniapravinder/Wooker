@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Secondaryinfo" table="secondaryinfo" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="defaultId" type="string">
+            <column name="default_id" length="50" not-null="true" />
+        </property>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="deleted" />
+        </property>
+        <property name="securPass" type="string">
+            <column name="secur_pass" length="227" />
+        </property>
+        <property name="securTstmp" type="java.lang.Long">
+            <column name="secur_tstmp" />
+        </property>
+        <property name="securAttempt" type="java.lang.Byte">
+            <column name="secur_attempt" />
+        </property>
+        <property name="edsecurPass" type="string">
+            <column name="edsecur_pass" length="227" />
+        </property>
+        <property name="edsecurTstmp" type="java.lang.Long">
+            <column name="edsecur_tstmp" />
+        </property>
+        <property name="edsecurAttempt" type="java.lang.Byte">
+            <column name="edsecur_attempt" />
+        </property>
+        <property name="picId" type="string">
+            <column name="pic_id" length="50" />
+        </property>
+        <property name="school" type="string">
+            <column name="school" />
+        </property>
+        <property name="schoolpri" type="java.lang.Byte">
+            <column name="schoolpri" />
+        </property>
+        <property name="schoolentr" type="string">
+            <column name="schoolentr" length="10" />
+        </property>
+        <property name="schoolleave" type="string">
+            <column name="schoolleave" length="10" />
+        </property>
+        <property name="schooldesc" type="string">
+            <column name="schooldesc" />
+        </property>
+        <property name="schoolPrivacy" type="java.lang.Boolean">
+            <column name="school_privacy" />
+        </property>
+        <property name="gradcollege" type="string">
+            <column name="gradcollege" />
+        </property>
+        <property name="gradcollpri" type="java.lang.Byte">
+            <column name="gradcollpri" />
+        </property>
+        <property name="gradcollentr" type="string">
+            <column name="gradcollentr" length="10" />
+        </property>
+        <property name="gradcollleave" type="string">
+            <column name="gradcollleave" length="10" />
+        </property>
+        <property name="gradcolldesc" type="string">
+            <column name="gradcolldesc" />
+        </property>
+        <property name="gradcollPrivacy" type="java.lang.Boolean">
+            <column name="gradcoll_privacy" />
+        </property>
+        <property name="graduniver" type="string">
+            <column name="graduniver" />
+        </property>
+        <property name="graduniverpri" type="java.lang.Byte">
+            <column name="graduniverpri" />
+        </property>
+        <property name="graduniverentr" type="string">
+            <column name="graduniverentr" length="10" />
+        </property>
+        <property name="graduniverleave" type="string">
+            <column name="graduniverleave" length="10" />
+        </property>
+        <property name="graduniverdesc" type="string">
+            <column name="graduniverdesc" />
+        </property>
+        <property name="graduniverPrivacy" type="java.lang.Boolean">
+            <column name="graduniver_privacy" />
+        </property>
+        <property name="pogradcollege" type="string">
+            <column name="pogradcollege" />
+        </property>
+        <property name="pogradcollpri" type="java.lang.Byte">
+            <column name="pogradcollpri" />
+        </property>
+        <property name="pogradcollentr" type="string">
+            <column name="pogradcollentr" length="10" />
+        </property>
+        <property name="pogradcollleave" type="string">
+            <column name="pogradcollleave" length="10" />
+        </property>
+        <property name="pogradcolldesc" type="string">
+            <column name="pogradcolldesc" />
+        </property>
+        <property name="pogradcollPrivacy" type="java.lang.Boolean">
+            <column name="pogradcoll_privacy" />
+        </property>
+        <property name="pograduniver" type="string">
+            <column name="pograduniver" />
+        </property>
+        <property name="pograduniverpri" type="java.lang.Byte">
+            <column name="pograduniverpri" />
+        </property>
+        <property name="pograduniverentr" type="string">
+            <column name="pograduniverentr" length="10" />
+        </property>
+        <property name="pograduniverleave" type="string">
+            <column name="pograduniverleave" length="10" />
+        </property>
+        <property name="pograduniverdesc" type="string">
+            <column name="pograduniverdesc" />
+        </property>
+        <property name="pograduniverPrivacy" type="java.lang.Boolean">
+            <column name="pograduniver_privacy" />
+        </property>
+        <property name="worktype" type="string">
+            <column name="worktype" />
+        </property>
+        <property name="workplace" type="string">
+            <column name="workplace" />
+        </property>
+        <property name="workpri" type="java.lang.Byte">
+            <column name="workpri" />
+        </property>
+        <property name="workstart" type="string">
+            <column name="workstart" length="10" />
+        </property>
+        <property name="workleave" type="string">
+            <column name="workleave" length="10" />
+        </property>
+        <property name="workdesc" type="string">
+            <column name="workdesc" />
+        </property>
+        <property name="currcity" type="string">
+            <column name="currcity" />
+        </property>
+        <property name="hometown" type="string">
+            <column name="hometown" />
+        </property>
+        <property name="locationpri" type="java.lang.Byte">
+            <column name="locationpri" />
+        </property>
+        <property name="locationdesc" type="string">
+            <column name="locationdesc" />
+        </property>
+        <property name="movedfrom" type="string">
+            <column name="movedfrom" />
+        </property>
+        <property name="movedto" type="string">
+            <column name="movedto" />
+        </property>
+        <property name="movedpri" type="java.lang.Byte">
+            <column name="movedpri" />
+        </property>
+        <property name="movedtime" type="string">
+            <column name="movedtime" length="10" />
+        </property>
+        <property name="moveddesc" type="string">
+            <column name="moveddesc" />
+        </property>
+        <property name="mobilenumber" type="string">
+            <column name="mobilenumber" length="14" />
+        </property>
+        <property name="mobilepri" type="java.lang.Byte">
+            <column name="mobilepri" />
+        </property>
+        <property name="mobiletype" type="java.lang.Byte">
+            <column name="mobiletype" />
+        </property>
+        <property name="mobiledesc" type="string">
+            <column name="mobiledesc" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="emailpri" type="java.lang.Byte">
+            <column name="emailpri" />
+        </property>
+        <property name="emailtype" type="java.lang.Byte">
+            <column name="emailtype" />
+        </property>
+        <property name="emaildesc" type="string">
+            <column name="emaildesc" />
+        </property>
+        <property name="website" type="string">
+            <column name="website" />
+        </property>
+        <property name="websitepri" type="java.lang.Byte">
+            <column name="websitepri" />
+        </property>
+        <property name="websitetype" type="java.lang.Byte">
+            <column name="websitetype" />
+        </property>
+        <property name="websitedesc" type="string">
+            <column name="websitedesc" />
+        </property>
+        <property name="hobbies" type="string">
+            <column name="hobbies" />
+        </property>
+        <property name="hobbpri" type="java.lang.Byte">
+            <column name="hobbpri" />
+        </property>
+        <property name="hobbiesdesc" type="string">
+            <column name="hobbiesdesc" />
+        </property>
+        <property name="relatiname" type="string">
+            <column name="relatiname" />
+        </property>
+        <property name="relationship" type="java.lang.Byte">
+            <column name="relationship" />
+        </property>
+        <property name="relatitime" type="string">
+            <column name="relatitime" length="10" />
+        </property>
+        <property name="relatipri" type="java.lang.Byte">
+            <column name="relatipri" />
+        </property>
+        <property name="relatidesc" type="string">
+            <column name="relatidesc" />
+        </property>
+        <property name="relatname" type="string">
+            <column name="relatname" />
+        </property>
+        <property name="relation" type="java.lang.Byte">
+            <column name="relation" />
+        </property>
+        <property name="relatpri" type="java.lang.Byte">
+            <column name="relatpri" />
+        </property>
+        <property name="relatdesc" type="string">
+            <column name="relatdesc" />
+        </property>
+        <property name="languages" type="string">
+            <column name="languages" />
+        </property>
+        <property name="langpri" type="java.lang.Byte">
+            <column name="langpri" />
+        </property>
+        <property name="langdesc" type="string">
+            <column name="langdesc" />
+        </property>
+        <property name="religion" type="string">
+            <column name="religion" />
+        </property>
+        <property name="religpri" type="java.lang.Byte">
+            <column name="religpri" />
+        </property>
+        <property name="religdesc" type="string">
+            <column name="religdesc" />
+        </property>
+        <property name="behaviour" type="string">
+            <column name="behaviour" />
+        </property>
+        <property name="behavpri" type="java.lang.Byte">
+            <column name="behavpri" />
+        </property>
+        <property name="behavdesc" type="string">
+            <column name="behavdesc" />
+        </property>
+        <property name="myself" type="string">
+            <column name="myself" />
+        </property>
+        <property name="myselpri" type="java.lang.Byte">
+            <column name="myselpri" />
+        </property>
+        <property name="myseldesc" type="string">
+            <column name="myseldesc" />
+        </property>
+        <property name="categname" type="string">
+            <column name="categname" />
+        </property>
+        <property name="categvalue" type="string">
+            <column name="categvalue" />
+        </property>
+        <property name="categpri" type="java.lang.Byte">
+            <column name="categpri" />
+        </property>
+        <property name="categdesc" type="string">
+            <column name="categdesc" />
+        </property>
+    </class>
+</hibernate-mapping>

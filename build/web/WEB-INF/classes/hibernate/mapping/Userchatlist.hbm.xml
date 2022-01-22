@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 21, 2018 4:33:20 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Userchatlist" table="userchatlist" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="long">
+            <column name="auto_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="userOne" type="long">
+            <column name="user_one" not-null="true" />
+        </property>
+        <property name="userTwo" type="long">
+            <column name="user_two" not-null="true" />
+        </property>
+        <property name="blockedchatOne" type="long">
+            <column name="blockedchat_one" not-null="true" />
+        </property>
+        <property name="blockedchatTwo" type="long">
+            <column name="blockedchat_two" not-null="true" />
+        </property>
+        <property name="muteOne" type="long">
+            <column name="mute_one" not-null="true" />
+        </property>
+        <property name="muteTwo" type="long">
+            <column name="mute_two" not-null="true" />
+        </property>
+        <property name="offchatOne" type="long">
+            <column name="offchat_one" not-null="true" />
+        </property>
+        <property name="offchatTwo" type="long">
+            <column name="offchat_two" not-null="true" />
+        </property>
+        <property name="request" type="boolean">
+            <column name="request" not-null="true" />
+        </property>
+        <property name="blocked" type="boolean">
+            <column name="blocked" not-null="true" />
+        </property>
+        <property name="friend" type="boolean">
+            <column name="friend" not-null="true" />
+        </property>
+        <property name="removed" type="boolean">
+            <column name="removed" not-null="true" />
+        </property>
+        <property name="sent" type="long">
+            <column name="sent" not-null="true" />
+        </property>
+        <property name="accepted" type="long">
+            <column name="accepted" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

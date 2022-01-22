@@ -1,0 +1,182 @@
+.school_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/school.jpg);
+}
+
+.graduate_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/graduation.jpg);
+}
+
+.work_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/work.jpg);
+}
+
+.location_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/location.svg);
+}
+
+.moved_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/moved.jpg);
+}
+
+.mobile_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/mobile.jpg);
+}
+
+.email_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/email.jpg);
+}
+
+.website_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/website.jpg);
+}
+
+.hobbies_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/hobbies.jpg);
+}
+
+.relationship_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/relationship.jpg);
+}
+
+.relation_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/relation.jpg);
+}
+
+.languages_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/languages.jpg);
+}
+
+.religion_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/religion.jpg);
+}
+
+.behaviour_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/behaviour.jpg);
+}
+
+.myself_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/myself.jpg);
+}
+
+.newcatg_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url(/rele/img/moreinfo/newcatg.jpg);
+}
+
+.defft_ava {
+    border-radius: 50px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+}
+
+.gfg_container {
+    display: block;
+    margin: 40px 0 40px 0;
+    height: 80px;
+}
+
+.rerr_cvv {
+    padding-left: 110px;
+    font-size: 13px;
+    display: block;
+    margin: 5px auto 5px auto;
+    line-height: 15px;
+}
+
+.qer_fgder {
+    padding-left: 110px;
+    font-size: 12px;
+    display: block;
+    margin: 5px auto 5px auto;
+    line-height: 15px;
+}
+
+.tyll_link {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.tyll_link a {
+    margin-right: 5px;
+}

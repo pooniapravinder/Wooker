@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 9, 2018 6:17:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Usermessages" table="usermessages" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="long">
+            <column name="auto_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="operId" type="long">
+            <column name="oper_id" not-null="true" />
+        </property>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+        <property name="sender" type="long">
+            <column name="sender" not-null="true" />
+        </property>
+        <property name="receiver" type="long">
+            <column name="receiver" not-null="true" />
+        </property>
+        <property name="chatRead" type="boolean">
+            <column name="chat_read" not-null="true" />
+        </property>
+        <property name="chatpageRead" type="boolean">
+            <column name="chatpage_read" not-null="true" />
+        </property>
+        <property name="getback" type="boolean">
+            <column name="getback" not-null="true" />
+        </property>
+        <property name="forward" type="boolean">
+            <column name="forward" not-null="true" />
+        </property>
+        <property name="deletedOne" type="long">
+            <column name="deleted_one" not-null="true" />
+        </property>
+        <property name="deletedTwo" type="long">
+            <column name="deleted_two" not-null="true" />
+        </property>
+        <property name="msgTimestamp" type="long">
+            <column name="msg_timestamp" not-null="true" />
+        </property>
+        <property name="seenTimestamp" type="long">
+            <column name="seen_timestamp" not-null="true" />
+        </property>
+        <one-to-one name="messages" class="hibernate.mapping.Messages"></one-to-one>
+    </class>
+</hibernate-mapping>

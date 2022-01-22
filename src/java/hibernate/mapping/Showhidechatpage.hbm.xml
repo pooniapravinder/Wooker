@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2018 6:19:29 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Showhidechatpage" table="showhidechatpage" catalog="wooker" optimistic-lock="version">
+        <id name="userId" type="long">
+            <column name="user_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="wooks" type="boolean">
+            <column name="wooks" not-null="true" />
+        </property>
+        <property name="remove" type="boolean">
+            <column name="remove" not-null="true" />
+        </property>
+        <property name="block" type="boolean">
+            <column name="block" not-null="true" />
+        </property>
+        <property name="starred" type="boolean">
+            <column name="starred" not-null="true" />
+        </property>
+        <property name="priority" type="boolean">
+            <column name="priority" not-null="true" />
+        </property>
+        <property name="mute" type="boolean">
+            <column name="mute" not-null="true" />
+        </property>
+        <property name="offchat" type="boolean">
+            <column name="offchat" not-null="true" />
+        </property>
+        <property name="privacy" type="boolean">
+            <column name="privacy" not-null="true" />
+        </property>
+        <property name="settings" type="boolean">
+            <column name="settings" not-null="true" />
+        </property>
+        <property name="msgTime" type="boolean">
+            <column name="msg_time" not-null="true" />
+        </property>
+        <property name="msgLength" type="byte">
+            <column name="msg_length" not-null="true" />
+        </property>
+        <property name="defaultWallpaper" type="byte">
+            <column name="default_wallpaper" not-null="true" />
+        </property>
+        <property name="wallpaperId" type="string">
+            <column name="wallpaper_id" />
+        </property>
+    </class>
+</hibernate-mapping>

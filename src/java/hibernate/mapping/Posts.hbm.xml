@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 23, 2019 11:57:26 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Posts" table="posts" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="long">
+            <column name="auto_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="wookId" type="long">
+            <column name="wook_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+        <property name="user" type="long">
+            <column name="user" not-null="true" />
+        </property>
+        <property name="text" type="string">
+            <column name="text" length="65535" />
+        </property>
+        <property name="edited" type="boolean">
+            <column name="edited" not-null="true" />
+        </property>
+        <property name="deleted" type="boolean">
+            <column name="deleted" not-null="true" />
+        </property>
+        <property name="picId" type="string">
+            <column name="pic_id" length="50" />
+        </property>
+        <property name="origName" type="string">
+            <column name="orig_name" length="65535" />
+        </property>
+        <property name="mediaType" type="string">
+            <column name="media_type" length="10" />
+        </property>
+        <property name="mediaSize" type="java.lang.Long">
+            <column name="media_size" />
+        </property>
+    </class>
+</hibernate-mapping>

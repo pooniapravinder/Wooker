@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Primaryinfo" table="primaryinfo" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="prisecurPass" type="string">
+            <column name="prisecur_pass" length="227" not-null="true" />
+        </property>
+        <property name="prisecurTstmp" type="long">
+            <column name="prisecur_tstmp" not-null="true" />
+        </property>
+        <property name="prisecurAttempt" type="byte">
+            <column name="prisecur_attempt" not-null="true" />
+        </property>
+        <property name="edprisecurPass" type="string">
+            <column name="edprisecur_pass" length="227" not-null="true" />
+        </property>
+        <property name="edprisecurTstmp" type="long">
+            <column name="edprisecur_tstmp" not-null="true" />
+        </property>
+        <property name="edprisecurAttempt" type="byte">
+            <column name="edprisecur_attempt" not-null="true" />
+        </property>
+        <property name="primaryUpdate" type="boolean">
+            <column name="primary_update" not-null="true" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="first_name" length="40" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="40" not-null="true" />
+        </property>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="20" not-null="true" />
+        </property>
+        <property name="nicknameCombination" type="byte">
+            <column name="nickname_combination" not-null="true" />
+        </property>
+        <property name="nicknamePrivacy" type="byte">
+            <column name="nickname_privacy" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="6" not-null="true" />
+        </property>
+        <property name="genderPrivacy" type="byte">
+            <column name="gender_privacy" not-null="true" />
+        </property>
+        <property name="birthDay" type="string">
+            <column name="birth_day" length="10" not-null="true" />
+        </property>
+        <property name="monthPrivacy" type="byte">
+            <column name="month_privacy" not-null="true" />
+        </property>
+        <property name="datePrivacy" type="byte">
+            <column name="date_privacy" not-null="true" />
+        </property>
+        <property name="yearPrivacy" type="byte">
+            <column name="year_privacy" not-null="true" />
+        </property>
+        <property name="agePrivacy" type="byte">
+            <column name="age_privacy" not-null="true" />
+        </property>
+        <property name="emailidPhone" type="string">
+            <column name="emailid_phone" length="50" not-null="true" />
+        </property>
+        <property name="accountPrivacy" type="byte">
+            <column name="account_privacy" not-null="true" />
+        </property>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

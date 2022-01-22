@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 3, 2018 10:10:52 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Wooks" table="wooks" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="long">
+            <column name="auto_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="25" not-null="true" />
+        </property>
+        <property name="wtype" type="string">
+            <column name="wtype" length="25" not-null="true" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" length="50" />
+        </property>
+        <property name="coverPhoto" type="string">
+            <column name="cover_photo" length="50" />
+        </property>
+        <property name="privacy" type="byte">
+            <column name="privacy" not-null="true" />
+        </property>
+        <property name="publish" type="byte">
+            <column name="publish" not-null="true" />
+        </property>
+        <property name="text" type="boolean">
+            <column name="text" not-null="true" />
+        </property>
+        <property name="image" type="boolean">
+            <column name="image" not-null="true" />
+        </property>
+        <property name="audio" type="boolean">
+            <column name="audio" not-null="true" />
+        </property>
+        <property name="video" type="boolean">
+            <column name="video" not-null="true" />
+        </property>
+        <property name="file" type="boolean">
+            <column name="file" not-null="true" />
+        </property>
+        <property name="timestampVal" type="long">
+            <column name="timestamp_val" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

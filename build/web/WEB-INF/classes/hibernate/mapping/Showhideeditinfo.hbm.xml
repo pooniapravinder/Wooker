@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Showhideeditinfo" table="showhideeditinfo" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="deviceId" type="string">
+            <column name="device_id" not-null="true" />
+        </property>
+        <property name="info" type="boolean">
+            <column name="info" not-null="true" />
+        </property>
+        <property name="moreinfo" type="boolean">
+            <column name="moreinfo" not-null="true" />
+        </property>
+        <property name="setting" type="boolean">
+            <column name="setting" not-null="true" />
+        </property>
+        <property name="security" type="boolean">
+            <column name="security" not-null="true" />
+        </property>
+        <property name="lastsaved" type="boolean">
+            <column name="lastsaved" not-null="true" />
+        </property>
+        <property name="firstname" type="boolean">
+            <column name="firstname" not-null="true" />
+        </property>
+        <property name="lastname" type="boolean">
+            <column name="lastname" not-null="true" />
+        </property>
+        <property name="nickname" type="boolean">
+            <column name="nickname" not-null="true" />
+        </property>
+        <property name="gender" type="boolean">
+            <column name="gender" not-null="true" />
+        </property>
+        <property name="birthday" type="boolean">
+            <column name="birthday" not-null="true" />
+        </property>
+        <property name="age" type="boolean">
+            <column name="age" not-null="true" />
+        </property>
+        <property name="accounttype" type="boolean">
+            <column name="accounttype" not-null="true" />
+        </property>
+        <property name="showhide" type="boolean">
+            <column name="showhide" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

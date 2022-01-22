@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Tokens" table="tokens" catalog="wooker" optimistic-lock="version">
+        <id name="tokenId" type="java.lang.Long">
+            <column name="token_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="long">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="token" type="string">
+            <column name="token" length="65535" not-null="true" />
+        </property>
+        <property name="isUsed" type="boolean">
+            <column name="is_used" not-null="true" />
+        </property>
+        <property name="setTimestamp" type="long">
+            <column name="set_timestamp" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

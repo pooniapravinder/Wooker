@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2018 11:27:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.mapping.Captchacode" table="captchacode" catalog="wooker" optimistic-lock="version">
+        <id name="autoId" type="java.lang.Long">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="captchaId" type="string">
+            <column name="captcha_id" length="65535" not-null="true" />
+        </property>
+        <property name="captchaCode" type="string">
+            <column name="captcha_code" length="6" not-null="true" />
+        </property>
+        <property name="isUsed" type="boolean">
+            <column name="is_used" not-null="true" />
+        </property>
+        <property name="setTimestamp" type="long">
+            <column name="set_timestamp" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
